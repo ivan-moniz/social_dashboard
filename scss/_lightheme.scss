@@ -1,0 +1,50 @@
+body.light {
+  background: $white-bg;
+  .top-showcase {
+    background: $very-pale-blue-bg;
+    .text-container {
+      h2 {
+        color: $very-dark-blue-text;
+      }
+      p {
+        color: $dark-grayish-blue-text;
+      }
+    }
+    .toggle {
+      p {
+        color: $very-dark-blue-text;
+      }
+    }
+  }
+
+  .container {
+    div {
+      background: $light-graysih-blue-car-bg;
+      h2 {
+        color: $very-dark-blue-text;
+      }
+      color: $dark-grayish-blue-text;
+      &:hover{
+        background:  darken($light-graysih-blue-car-bg, 5);
+      }
+    }
+  }
+
+  .container-overview {
+    .header {
+      color: $very-dark-blue-text;
+    }
+    .grid-container {
+      .page-views {
+        color: $dark-grayish-blue-text;
+        background: $light-graysih-blue-car-bg;
+        &:hover{
+          background:  darken($light-graysih-blue-car-bg, 5);
+        }
+        h2 {
+          color: $very-dark-blue-text;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+%box {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 5px;
+  background: $dark-saturated-blue-card;
+  padding: 1rem;
+  cursor: pointer;
+  &:hover{
+    background:  lighten($dark-saturated-blue-card, 10);
+  }
+  p {
+    padding: .5rem;
+    span {
+      padding: .5rem;
+      color: $desaturated-blue-text;
+    }
+    img {
+      transform: translateY(15%);
+    }
+
+    .top-icon {
+      padding: 0 .3rem;
+      transform: translateY(-100%);
+    }
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .green {
+    color: $lime-green;
+  }
+
+
+}
+
+
+
+.box-facebook {
+  @extend %box;
+  border-top: 4px solid $facebook-color;
+}
+
+.box-twitter {
+  @extend %box;
+  border-top: 4px solid $twitter-color;
+}
+
+.box-instagram {
+  @extend %box;
+  border-top: 4px solid $instagram-color;
+}
+
+.box-youtube {
+  @extend %box;
+  border-top: 4px solid $youtube-color;
+  .top-icon {
+    color: $bright-red;
+  }
+  .green {
+    color: $bright-red;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: $desaturated-blue-text;
+}

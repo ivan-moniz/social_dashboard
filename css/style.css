@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-youtube, .box-instagram, .box-twitter, .box-facebook {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 5px;
+  background: #252a41;
+  padding: 1rem;
+  cursor: pointer;
+}
+.box-youtube:hover, .box-instagram:hover, .box-twitter:hover, .box-facebook:hover {
+  background: #374062;
+}
+.box-youtube p, .box-instagram p, .box-twitter p, .box-facebook p {
+  padding: 0.5rem;
+}
+.box-youtube p span, .box-instagram p span, .box-twitter p span, .box-facebook p span {
+  padding: 0.5rem;
+  color: #8b97c6;
+}
+.box-youtube p img, .box-instagram p img, .box-twitter p img, .box-facebook p img {
+  transform: translateY(15%);
+}
+.box-youtube p .top-icon, .box-instagram p .top-icon, .box-twitter p .top-icon, .box-facebook p .top-icon {
+  padding: 0 0.3rem;
+  transform: translateY(-100%);
+}
+.box-youtube h2, .box-instagram h2, .box-twitter h2, .box-facebook h2 {
+  font-size: 4rem;
+}
+.box-youtube .green, .box-instagram .green, .box-twitter .green, .box-facebook .green {
+  color: #1db489;
+}
+
+.box-facebook {
+  border-top: 4px solid #198ff5;
+}
+
+.box-twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+.box-instagram {
+  border-top: 4px solid #fdc468;
+}
+
+.box-youtube {
+  border-top: 4px solid #c4032a;
+}
+.box-youtube .top-icon {
+  color: #dc417f;
+}
+.box-youtube .green {
+  color: #dc417f;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #8b97c6;
+}
+
+body.light {
+  background: white;
+}
+body.light .top-showcase {
+  background: #f7f5ff;
+}
+body.light .top-showcase .text-container h2 {
+  color: #1e202a;
+}
+body.light .top-showcase .text-container p {
+  color: #63687e;
+}
+body.light .top-showcase .toggle p {
+  color: #1e202a;
+}
+body.light .container div {
+  background: #f0f2fa;
+  color: #63687e;
+}
+body.light .container div h2 {
+  color: #1e202a;
+}
+body.light .container div:hover {
+  background: #dde2f3;
+}
+body.light .container-overview .header {
+  color: #1e202a;
+}
+body.light .container-overview .grid-container .page-views {
+  color: #63687e;
+  background: #f0f2fa;
+}
+body.light .container-overview .grid-container .page-views:hover {
+  background: #dde2f3;
+}
+body.light .container-overview .grid-container .page-views h2 {
+  color: #1e202a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #1e202a;
+}
+
+.showcase .top-showcase {
+  padding: 1rem 5rem;
+  height: 300px;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f212e;
+  color: white;
+}
+.showcase .top-showcase p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8b97c6;
+}
+.showcase .top-showcase .toggle {
+  padding: 0rem 2.5rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+}
+.showcase .top-showcase .toggle p {
+  color: white;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.showcase .top-showcase .toggle .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.showcase .top-showcase .toggle .label {
+  background: linear-gradient(to left, #378fe6 0%, #3eda82 100%);
+  display: flex;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.showcase .top-showcase .toggle .ball {
+  background: #252a41;
+  border-radius: 50%;
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+.showcase .top-showcase .toggle .checkbox:checked + .label .ball {
+  background-color: #fff;
+  transform: translateX(24px);
+  transition: transform 0.2s linear;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 5rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 120px;
+  color: white;
+}
+
+.container-overview {
+  color: white;
+  transform: translateY(-50%);
+}
+.container-overview .header {
+  padding: 2rem 5rem;
+}
+.container-overview .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-gap: 1rem;
+  padding: 0 5rem;
+}
+.container-overview .grid-container .page-views {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 5px;
+  background: #252a41;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.container-overview .grid-container .page-views:hover {
+  background: #374062;
+}
+.container-overview .grid-container .page-views .card-one h3 {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  color: #8b97c6;
+}
+.container-overview .grid-container .page-views .card-one h2 {
+  font-size: 2rem;
+}
+.container-overview .grid-container .page-views .card-two {
+  text-align: center;
+  align-items: center;
+}
+.container-overview .grid-container .page-views .card-two p {
+  margin-top: 1.5rem;
+}
+.container-overview .grid-container .page-views .card-two p span {
+  font-size: 0.8rem;
+  color: #1db489;
+}
+.container-overview .grid-container .page-views .card-two p .icon {
+  padding: 0.1rem 0.2rem;
+}
+.container-overview .grid-container .page-views .card-two p #red {
+  color: #dc417f;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: #8b97c6;
+}
+
+@media (max-width: 701px) {
+  .showcase .top-showcase {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    padding: 1rem auto;
+  }
+  .showcase .top-showcase h2 {
+    font-size: 18px;
+  }
+  .showcase .top-showcase .toggle {
+    padding: 1rem 0 5rem 0;
+  }
+  .showcase .top-showcase .toggle p {
+    padding: 0 1rem 0 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 5rem 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-overview {
+    transform: translateY(-16%);
+  }
+  .container-overview .header {
+    font-size: 18px;
+    padding: 2rem 4rem;
+  }
+  .container-overview .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 10rem;
+  }
+
+  .attribution {
+    padding: 1rem 4rem;
+    line-height: 1.3;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
